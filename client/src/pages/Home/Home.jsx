@@ -1,17 +1,15 @@
+import { ContainerGlobal } from '../../styles/global'
 import { Container } from "./stylesHome"
-
-import { useAuth } from "../../contexts/auth"
+import { Card } from "../../components/Card/Card"
 
 export const Home = () => {
-    const { signUp } = useAuth();
 
-    function handleSair(){
-        signUp()
-    }
     return (
+
         <Container>
-            <h1 style={{fontSize: "40px"}} >Essa é a Home</h1>
-            <button style={{fontSize: "40px"}} onClick={handleSair}>Sair</button>
+            <ContainerGlobal>
+                <Card />
+            </ContainerGlobal>
         </Container>
     )
 }

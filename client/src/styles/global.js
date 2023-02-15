@@ -10,8 +10,9 @@ export default createGlobalStyle`
         font-family: 'Poppins', sans-serif; 
     }
     body{
-        background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-        color: ${({ theme }) => theme.COLORS.WHITE};
+        background: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
+        // background: #333;
+        color: ${({ theme }) => theme.COLORS.COLOR_PRIMARY};
     }
     a{
         text-decoration: none;
