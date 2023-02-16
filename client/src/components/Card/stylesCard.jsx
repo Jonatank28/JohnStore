@@ -1,19 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1rem;
+margin: 2rem 0;
 `;
 
 export const CardContent = styled.div`
-    width: 200px
-    height: 250px;
+    height: 280px;
     border-radius: .4rem;
     background: #fff;
     box-shadow: 0 0 10px #0000001a;
+    width: calc(210px - 16px);
+
+    @media (max-width: 450px) {
+        width: calc(50% - 8px);
+    }
+
 
     > img{
         width: 200px;
@@ -34,10 +40,11 @@ export const CardContent = styled.div`
         div{
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            align-items: center;
+            gap: 1rem;
 
             span:first-child{
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 color: ${({ theme }) => theme.COLORS.RED};
             }

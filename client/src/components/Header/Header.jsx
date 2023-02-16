@@ -3,6 +3,7 @@ import { ContainerGlobal } from '../../styles/global';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '../../assets/logo.webp';
+import { Search } from "../Search/Search";
 
 export const Header = () => {
     return (
@@ -12,8 +13,8 @@ export const Header = () => {
                     <a href="#">
                         <img src={logo} alt="Logo loja" />
                     </a>
-                    <h1>Busca</h1>
-                    <GiHamburgerMenu size={25}/>
+                    <Search />
+                    <GiHamburgerMenu className="iconeHamburger"/>
                 </ContainerContent>
             </ContainerGlobal>
         </Container>

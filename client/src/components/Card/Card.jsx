@@ -8,12 +8,12 @@ export const Card = () => {
                 data &&
                 data.map((item) => (
                     <CardContent>
-                        <img src={data[2].photo} alt="Foto" />
+                        <img src={item.photo} alt="Foto" />
                         <div>
-                            <h3>Card Title</h3>
+                            <h3>{item.title}</h3>
                             <div>
-                                <span>R$ 350</span>
-                                <span>R$ 250</span>
+                                <span>{item.current_value}</span>
+                                <span>{item.previous_value}</span>
                             </div>
                         </div>
                     </CardContent>

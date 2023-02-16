@@ -5,9 +5,9 @@ import ex3 from '../../assets/ex03.webp'
 export const data = [
     {
         id: '1',
-        title: "Celular novo 2023",
+        title: "Celular novo  Celular novo Celular",
         description: "éssa é a descrição",
-        previous_value: "49,99",
+        previous_value: "",
         current_value: "29,99",
         photo: ex1,
     },
@@ -23,7 +23,7 @@ export const data = [
         id: '3',
         title: "Celular novo 2023",
         description: "éssa é a descrição",
-        previous_value: "49,99",
+        previous_value: "",
         current_value: "29,99",
         photo: ex3,
     },
