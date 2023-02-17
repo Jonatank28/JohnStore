@@ -1,9 +1,9 @@
 import { Container } from './stylesButton';
 
-export const Button = () => {
+export const Button = ({ onclick, title, ...props }) => {
     return (
-        <Container>
-            
+        <Container onClick={onclick} { ...props }>
+            {title}
         </Container>
     )
 }

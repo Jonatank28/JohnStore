@@ -5,6 +5,7 @@ export const AuthContext = createContext({});
 
 function AuthProvider({ children }){
     const [data, setData] = useState({});
+    const [modalRegisterOpen, setModalRegisterOpen] = useState(false);
 
     async function signIn({ email, password }){
         try{
@@ -32,7 +33,13 @@ function AuthProvider({ children }){
     }
     
     return(
-        <AuthContext.Provider value={{ signIn, user: data, signUp }}>
+        <AuthContext.Provider value={{ 
+                signIn, 
+                signUp, 
+                user: data, 
+                modalRegisterOpen, 
+                setModalRegisterOpen,
+            }}>
             { children }
         </AuthContext.Provider>
     )

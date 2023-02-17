@@ -25,6 +25,23 @@ export const ContainerContent = styled.div`
         position: absolute;
         top: 18px;
         right: 10px;
+        cursor: pointer;
     }
 
+`;
+
+export const Menu = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: end;
+    top: 54px;
+    right: 10px;
+
+        a{
+            font-size: 1.6rem;
+            color: ${({ theme }) => theme.COLORS.COLOR_PRIMARY};
+
+        }
 `;
