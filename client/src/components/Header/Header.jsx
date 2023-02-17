@@ -55,7 +55,6 @@ export const Header = () => {
                         btn1= "Fechar"
                         btn2= "Salvar"
                     >
-                        <p style={{ fontSize: "40px"}}>jhhbfdfjhbf</p>
                         <FormModalRegister 
                             closeModal={closeModal}
                             btn1= "Fechar"

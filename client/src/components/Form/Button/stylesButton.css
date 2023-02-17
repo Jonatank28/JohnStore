@@ -1,0 +1,11 @@
+.cancel{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+.save{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+}

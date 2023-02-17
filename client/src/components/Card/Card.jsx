@@ -6,8 +6,8 @@ export const Card = () => {
         <Container>
             {
                 data &&
-                data.map((item) => (
-                    <CardContent>
+                data.map((item, index) => (
+                    <CardContent key={index}>
                         <img src={item.photo} alt="Foto" />
                         <div>
                             <h3>{item.title}</h3>
