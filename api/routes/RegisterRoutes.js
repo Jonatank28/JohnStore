@@ -9,8 +9,7 @@ const RegisterController = require('../controllers/registerController');
 const registerController = new RegisterController();
 
 
-registerRoutes.patch("/register-card", upload.array('photos', 5), registerController.create);
-
-
+registerRoutes.post("/register-card", registerController.create);
+registerRoutes.patch("/register-card", upload.array('photos'), registerController.photo);
 
 module.exports = registerRoutes;

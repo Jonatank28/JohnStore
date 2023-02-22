@@ -7,6 +7,7 @@ export const Button = ({ onclick, type, ...props }) => {
         <Container  
             onClick={onclick} 
             className={buttonClass}
+            type={type}
             { ...props }
         >
             {type === 'save' || type === 'submit' ? 'Salvar' : 'Cancelar'}

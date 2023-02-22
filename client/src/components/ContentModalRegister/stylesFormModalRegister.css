@@ -17,6 +17,7 @@ textarea{
     outline: none;
     font-size: 1.6rem;
     resize: vertical;
+    padding: .4rem .6rem;
 }
 
 .inputs{
@@ -34,6 +35,11 @@ textarea{
     font-size: 1.6rem;
     outline: none;
     border-radius: .4rem;
+}
+
+.inputs > div{
+    font-size: 1.2rem;
+    color: rgb(231, 102, 102);
 }
 
 .btns{

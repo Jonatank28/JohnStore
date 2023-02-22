@@ -52,13 +52,9 @@ export const Header = () => {
                     <Modall 
                         openModal={modalRegisterOpen}
                         closeModal={closeModal}
-                        btn1= "Fechar"
-                        btn2= "Salvar"
                     >
                         <FormModalRegister 
                             closeModal={closeModal}
-                            btn1= "Fechar"
-                            btn2= "Salvar"
                         />
                     </Modall>
                 </ContainerContent>
